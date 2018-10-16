@@ -5,7 +5,8 @@
 前几天写了个按键驱动，参考了[MulitButton](https://github.com/0x1abin/MultiButton)的数据结构的用法，逻辑实现并不一样。
 在这里感谢所有的开源开发者，让我从中学到了很多，同时网络也是一个好平台，也希望所有的开发者能形成良性循环，从网络中学知识，回馈到网络中去。感谢[MulitButton](https://github.com/0x1abin/MultiButton)的作者[0x1abin](https://github.com/0x1abin)，感谢两位rtt的大佬：[大法师](https://github.com/uestczyh222)、[流光](https://github.com/liu2guang)。
 ## Button_drive简介
-Button_drive是一个小巧的按键驱动，支持单击、双击、长按、连续触发等（后续可以在按键控制块中添加触发事件），理论上可无限量扩展Button，Button_drive采用按键触发事件回调方式处理业务逻辑，支持在RTOS中使用，我目前仅在RT-Thread上测试过。
+Button_drive是一个小巧的按键驱动，支持单击、双击、长按、连续触发等（后续可以在按键控制块中添加触发事件），理论上可无限量扩展Button，Button_drive采用按键触发事件回调方式处理业务逻辑，支持在RTOS中使用，我目前仅在[RT-Thread](https://github.com/RT-Thread/rt-thread)上测试过。
+写按键驱动的目的是想要将用户按键逻辑与按键处理事件分离，用户无需处理复杂麻烦的逻辑事件。
 
 ## Button_drive使用效果
 1. **单击与长按**
